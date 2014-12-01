@@ -1,0 +1,39 @@
+{
+  "name": "wpCloud Environment Switcher",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created with the awesome extensionizr.com",
+  "homepage_url": "http://wpcloud.io",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "options_page": "src/options_custom/index.html",
+  "page_action": {
+    "default_icon": {
+      "19": "icons/icon19.png",
+      "48": "images/icon48.png"
+    },
+    "default_title": "Environment",
+    "default_popup": "src/page_action/page_action.html"
+  },
+  "permissions": [
+    "contentSettings",
+    "tabs",
+    "debugger",
+    "contextMenus",
+    "cookies",
+    "notifications",
+    "geolocation",
+    "webRequest",
+    "*://*.uds.io/",
+    "*://*.wpcloud.io/"
+
+  ]
+}
